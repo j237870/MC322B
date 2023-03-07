@@ -1,0 +1,47 @@
+[         1.868145]: GLib-GIO[1953]: DEBUG: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
+[         1.869793]: GLib-GIO[1953]: DEBUG: Using cross-namespace EXTERNAL authentication (this will deadlock if server is GDBus < 2.73.3)
+
+[         1.870467]: IMSettings-LXDE backend[1953]: WARNING **: Unable to load the lxde configuration file.
+
+[         1.950003]: IMSettings-Qt backend[1953]: WARNING **: Unable to read the Qt config file: No such file or directory
+
+[         1.958085]: IMSettings-LXDE backend[1953]: WARNING **: Unable to load the lxde configuration file.
+
+[         1.960605]: IMSettings-Qt backend[1953]: WARNING **: Unable to read the Qt config file: No such file or directory
+imsettings information
+==========================
+XINPUTRC: /etc/X11/xinit/xinput.d//none.conf
+	  File: /etc/X11/xinit/xinput.d//none.conf
+	  Size: 110       	Blocks: 8          IO Block: 4096   regular file
+	Device: 8,6	Inode: 961286      Links: 1
+	Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+	Access: 2023-03-06 21:02:18.491190725 -0300
+	Modify: 2023-01-18 07:15:58.000000000 -0300
+	Change: 2023-01-31 19:59:56.786884480 -0300
+	 Birth: 2023-01-31 19:59:56.768884157 -0300
+Is DBus enabled: yes
+Is imsettings enabled: yes
+Is GTK+ supported: no
+Is Qt supported: 
+[         2.039896]: IMSettings-LXDE backend[1953]: WARNING **: Unable to load the lxde configuration file.
+
+[         2.042423]: IMSettings-Qt backend[1953]: WARNING **: Unable to read the Qt config file: No such file or directory
+
+[         2.049995]: IMSettings-LXDE backend[1953]: WARNING **: Unable to load the lxde configuration file.
+
+[         2.052359]: IMSettings-Qt backend[1953]: WARNING **: Unable to read the Qt config file: No such file or directory
+yes
+DESKTOP: unknown
+GUESS_DESKTOP: $DESKTOP_SESSION
+DISABLE_IMSETTINGS: 
+IMSETTINGS_DISABLE_DESKTOP_CHECK: 
+DBUS_SESSION_BUS_ADDRESS: unix:path=/run/user/18087/bus
+GTK_IM_MODULE: gtk-im-context-simple
+QT_IM_MODULE: xim
+XMODIFIERS: @im=none
+IMSETTINGS_MODULE: none
+IMSETTINGS_INTEGRATE_DESKTOP: yes
+IMSETTINGS_DISABLE_SYS_XINPUTRC: no
+IMSETTINGS_DISABLE_USER_XINPUTRC: no
+
+** GNOME isn't supported at all

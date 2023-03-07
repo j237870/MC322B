@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/spec/obi91/texto.txt" added="2023-03-07T18:02:47.966802Z" modified="2023-03-07T18:05:32.965075Z" visited="2023-03-07T18:02:47.966803Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gnome-text-editor" exec="&apos;gnome-text-editor %u&apos;" modified="2023-03-07T18:05:32.965074Z" count="30"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/spec/obi91/Readme.md" added="2023-03-07T18:02:47.966806Z" modified="2023-03-07T18:05:32.965076Z" visited="2023-03-07T18:02:47.966806Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gnome-text-editor" exec="&apos;gnome-text-editor %u&apos;" modified="2023-03-07T18:05:32.965076Z" count="30"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
