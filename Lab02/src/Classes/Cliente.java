@@ -1,19 +1,27 @@
 package Classes;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class Cliente {
 	private String nome;
-	private String cpf;
-	private String dataNascimento;
-	private int idade;
 	private String endereco;
+	private Date dataLicenca;
+	private String educacao;
+	private String genero;
+	private String classeEconomica;
+	private ArrayList<Veiculo> listaVeiculos;
 	
 	// Construtor
-	public Cliente(String nome, String cpf, String dataNascimento, int idade, String endereco) {
+	public Cliente(String nome, String endereco, Date dataLicenca,
+			String educacao, String genero, String classeEconomica,
+			ArrayList<Veiculo> listaVeiculos) {
 		this.nome = nome;
-		this.cpf = cpf;
-		this.dataNascimento = dataNascimento;
-		this.idade = idade;
 		this.endereco = endereco;
+		this.setDataLicenca(dataLicenca);
+		this.setEducacao(educacao);
+		this.setGenero(genero);
+		this.setClasseEconomica(classeEconomica);
+		this.setListaVeiculos(listaVeiculos);
 	}
 	
 	// Getters e setters
@@ -25,30 +33,6 @@ public class Cliente {
 		this.nome = nome;
 	}
 	
-	public String getCpf() {
-		return cpf;
-	}
-	
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-	
-	public String getDataNascimento() {
-		return dataNascimento;
-	}
-	
-	public void setDataNascimento(String dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
-	
-	public int getIdade() {
-		return idade;
-	}
-	
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
-	
 	public String getEndereco() {
 		return endereco;
 	}
@@ -56,40 +40,45 @@ public class Cliente {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	
-	public boolean validarCPF(String cpf) {
-		cpf = cpf.replaceAll("[^0-9]+", "");
-		if (cpf.length() != 11)
-			return false;
-		int i = 1;
-		while (cpf.charAt(i - 1) == cpf.charAt(i)) {
-			if(i == cpf.length() - 1)
-				return false;
-			i++;
-		}
-		// primeiro digito verificador
-		int digitoVerificador = 0;
-		for (int j=0; j<9; ++j)
-			digitoVerificador = digitoVerificador + (10 - j)*Character.getNumericValue(cpf.charAt(i));
-		digitoVerificador = digitoVerificador % 11;
-		if (digitoVerificador <= 1)
-			digitoVerificador = 0;
-		else
-			digitoVerificador = 11 - digitoVerificador;
-		if (digitoVerificador != Character.getNumericValue(cpf.charAt(9)))
-			return false;
-		
-		// segundo digito verificador
-		digitoVerificador = 0;
-		for (int j=0; j<9; ++j)
-			digitoVerificador = digitoVerificador + (10 - j)*Character.getNumericValue(cpf.charAt(i + 1));
-		digitoVerificador = digitoVerificador % 11;
-		if (digitoVerificador <= 1)
-			digitoVerificador = 0;
-		else
-			digitoVerificador = 11 - digitoVerificador;
-		if (digitoVerificador != Character.getNumericValue(cpf.charAt(10)))
-			return false;
-		return true;
+
+	public Date getDataLicenca() {
+		return dataLicenca;
 	}
+
+	public void setDataLicenca(Date dataLicenca) {
+		this.dataLicenca = dataLicenca;
+	}
+
+	public String getEducacao() {
+		return educacao;
+	}
+
+	public void setEducacao(String educacao) {
+		this.educacao = educacao;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
+	public String getClasseEconomica() {
+		return classeEconomica;
+	}
+
+	public void setClasseEconomica(String classeEconomica) {
+		this.classeEconomica = classeEconomica;
+	}
+
+	public ArrayList<Veiculo> getListaVeiculos() {
+		return listaVeiculos;
+	}
+
+	public void setListaVeiculos(ArrayList<Veiculo> listaVeiculos) {
+		this.listaVeiculos = listaVeiculos;
+	}
+	
 }
